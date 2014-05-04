@@ -1,5 +1,7 @@
 This assembly contains all open-source dependencies as required by `bdistribution` and `bdevel`, for all supported platforms and in all required versions.
 
+Dependencies dealing with graphical user interfaces have been moved to [bdep-oss-gui](https://github.com/Byron/bdep-oss-gui) to speed up travis-ci.
+
 All other, non-free dependencies are described in the `bdep-nonfree` assembly. The latter will not contain the actual software due to restrictive licenses, but have to be added by the user who has to provide his own copy the the licensed software.
 
 A dependency in our sense of the word is a python or c/c++ library for the sole purpose of importing or linking against it at runtime, as appropriate. Dependencies suitable for building programs are provided in a separate assembly as needed.
