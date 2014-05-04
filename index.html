@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Open-Source Depedencies - commandline compatible">
+        
+        <link rel="canonical" href="https://byron.github.io/bdep-oss/">
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+        <title>bdep-oss</title>
+
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/prettify-1.0.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href=".">bdep-oss</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="active">
+                    <a href=".">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="license/">License</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="license/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/Byron/bdep-oss">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#assembly-requirements">Assembly Requirements</a></li>
+        
+    
+        <li class="main "><a href="#directory-structure">Directory Structure</a></li>
+        
+    
+        <li class="main "><a href="#license-and-copyright">License and Copyright</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<p>This assembly contains all open-source dependencies as required by <code>bdistribution</code> and <code>bdevel</code>, for all supported platforms and in all required versions.</p>
+<p>Dependencies dealing with graphical user interfaces have been moved to <a href="https://github.com/Byron/bdep-oss-gui">bdep-oss-gui</a> to speed up travis-ci.</p>
+<p>All other, non-free dependencies are described in the <code>bdep-nonfree</code> assembly. The latter will not contain the actual software due to restrictive licenses, but have to be added by the user who has to provide his own copy the the licensed software.</p>
+<p>A dependency in our sense of the word is a python or c/c++ library for the sole purpose of importing or linking against it at runtime, as appropriate. Dependencies suitable for building programs are provided in a separate assembly as needed.</p>
+<h2 id="assembly-requirements">Assembly Requirements</h2>
+<p>We depend on the following variable to be set within the yaml settings: <code>assembly.trees.oss-dependencies</code>. It is set by either <code>bdevel</code> or <code>bdistribution</code> to point to our respective root.</p>
+<p>Additionally, <code>platform.id</code> must be set to the name of the platform.</p>
+<p>The reason for this is that we want to be easily integrated, either to be part of another assembly, or to live side-by-side, whatever fits best to the respective user.</p>
+<h2 id="directory-structure">Directory Structure</h2>
+<p>Packages we depend on are kep in the <code>lib/</code> directory, and each package follows the structure below.</p>
+<pre class="prettyprint well"><code>.
+`-- &lt;package&gt;
+    `-- &lt;version&gt;
+        `-- &lt;platform&gt;
+</code></pre>
+
+<p>As each package is configured via yaml files in <code>etc/</code>, arbitrary package structures can be used if necessary or useful. However, to reduce confusion, we try not to deviate from the rules unless absolutely required.</p>
+<h2 id="license-and-copyright">License and Copyright</h2>
+<p>The files and code in this repository are licensed under the <a href="http://opensource.org/licenses/MIT">MIT License</a></p>
+<p>All projects distributed here have their own open-source license, please see their respective LICENSE files for details.</p>
+</div>
+        </div>
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/prettify-1.0.min.js"></script>
+        <script src="./js/base.js"></script>
+    </body>
+</html>
