@@ -6,7 +6,3 @@
 	path = lib/git-python/0.3/noarch
 	url = https://github.com/gitpython-developers/GitPython
 	branch = 0.3
-[submodule "sqlalchemy/latest"]
-	url = https://github.com/zzzeek/sqlalchemy
-	path = lib/sqlalchemy/latest/noarch
-	branch = refs/heads/master
