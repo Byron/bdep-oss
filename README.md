@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Byron/bdep-oss.svg?branch=master)](https://travis-ci.org/Byron/bdep-oss)
+
 This assembly contains all open-source dependencies as required by `bdistribution` and `bdevel`, for all supported platforms and in all required versions.
 
 Dependencies dealing with graphical user interfaces have been moved to [bdep-oss-gui](https://github.com/Byron/bdep-oss-gui) to speed up travis-ci.
