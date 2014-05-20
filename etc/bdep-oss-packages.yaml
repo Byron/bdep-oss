@@ -3,7 +3,7 @@ packages:
   pgit-package:   ##
   #################
     # Confiure tree, and pull in configuration
-    trees: '{assembly.trees.oss-dependencies}/lib/pgit/{packages.pgit-package.version}/noarch'
+    trees: '{settings-files.bdep-oss-packages.dirname}/../lib/pgit/{packages.pgit-package.version}/noarch'
     version: 'latest'
     include: etc
   #########
@@ -14,7 +14,7 @@ packages:
     description: |
       A framework to run unit tests and gather their results
     url: https://nose.readthedocs.org/en/latest/
-    trees: '{assembly.trees.oss-dependencies}/lib/nose/{packages.nose.version}/noarch'
+    trees: '{settings-files.bdep-oss-packages.dirname}/../lib/nose/{packages.nose.version}/noarch'
     environment:
       variables:
         PYTHONPATH: '.'
@@ -27,7 +27,7 @@ packages:
     description: |
       A framework to help creating mock objects
     url: http://www.voidspace.org.uk/python/mock/
-    trees: '{assembly.trees.oss-dependencies}/lib/mock/{packages.mock.version}/noarch'
+    trees: '{settings-files.bdep-oss-packages.dirname}/../lib/mock/{packages.mock.version}/noarch'
     environment:
       variables:
         PYTHONPATH: '.'
@@ -36,7 +36,7 @@ packages:
   git-python: ##
   #############
     name: git-python
-    trees: '{assembly.trees.oss-dependencies}/lib/git-python/{packages.git-python.version}/noarch'
+    trees: '{settings-files.bdep-oss-packages.dirname}/../lib/git-python/{packages.git-python.version}/noarch'
     description: |
       Allows to use git from within python, following pythonic ways.
     url: https://github.com/gitpython-developers/GitPython
@@ -50,7 +50,7 @@ packages:
   sqlalchemy:  ##
   #############
     name: sqlalchemy
-    trees: '{assembly.trees.oss-dependencies}/lib/sqlalchemy/{packages.sqlalchemy.version}/noarch'
+    trees: '{settings-files.bdep-oss-packages.dirname}/../lib/sqlalchemy/{packages.sqlalchemy.version}/noarch'
     description: |
       SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.
     url: www.sqlalchemy.org
