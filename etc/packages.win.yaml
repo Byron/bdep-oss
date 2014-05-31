@@ -1,5 +1,0 @@
-packages:
-  python:
-    # on windows, it's just that
-    executable: 'c:\Python{packages.python.version.major}{packages.python.version.minor}/python.exe'
-        
