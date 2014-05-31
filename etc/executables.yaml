@@ -7,11 +7,10 @@ packages:
     description: |
       The standard python interpreter
     url: https://www.python.org
-    trees:
-      - '/opt/local/bin'
-      - '/usr/bin'
-      - 'c:\Python{packages.python.version.major}{packages.python.version.minor}'
-    executable: 'python{packages.python.version}'
+    executable: 
+    - '/opt/local/bin/python{packages.python.version}'
+    - '/usr/local/bin/python{packages.python.version}'
+    - '/usr/bin/python{packages.python.version}'
 
   #############
   nosetests: #

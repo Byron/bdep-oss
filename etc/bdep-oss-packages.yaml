@@ -6,6 +6,7 @@ packages:
     trees: '{settings-files.bdep-oss-packages.dirname}/../lib/pgit/{packages.pgit-package.version}/noarch'
     version: 'latest'
     include: etc
+
   #########
   nose: ##
   #######
@@ -14,7 +15,7 @@ packages:
     description: |
       A framework to run unit tests and gather their results
     url: https://nose.readthedocs.org/en/latest/
-    trees: '{settings-files.bdep-oss-packages.dirname}/../lib/nose/{packages.nose.version}/noarch'
+    trees: '{settings-files.bdep-oss-packages.dirname}/../lib/nose/py{packages.python.version.major}_{packages.nose.version}/noarch'
     environment:
       variables:
         PYTHONPATH: '.'
