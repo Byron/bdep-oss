@@ -11,7 +11,7 @@ packages:
     - '/opt/local/bin/python{packages.python.version}'
     - '/usr/local/bin/python{packages.python.version}'
     - '/usr/bin/python{packages.python.version}'
-    - 'c:\Python{packages.python.version.major}{packages.python.version.minor}/python.exe'
+    - 'c:\Python{packages.python.version.major}{packages.python.version.minor}/python'
 
   #############
   nosetests: #
